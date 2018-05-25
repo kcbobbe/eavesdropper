@@ -1,7 +1,6 @@
 
 import request from 'superagent'
 import $ from 'jquery'
-import { debug } from 'util';
 window.$ = $
 
 let htmlToPage = []
