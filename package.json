@@ -12,7 +12,9 @@
   "description": "",
   "version": "1.0.0",
   "main": "flickr.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.9.0"
+  },
   "scripts": {
     "start": "concurrently \"parcel index.html\" \"twitter-proxy twitter.json\"",
     "test": "jest"
