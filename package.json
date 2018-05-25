@@ -1,0 +1,30 @@
+{
+  "dependencies": {
+    "babel-jest": "^23.0.0",
+    "concurrently": "^3.5.1",
+    "jest": "^23.0.0",
+    "jquery": "^3.3.1",
+    "superagent": "^3.8.3",
+    "surge": "^0.20.1",
+    "twitter-proxy": "2.0.0"
+  },
+  "name": "hw-w5d4-frontend-dangerzone",
+  "description": "",
+  "version": "1.0.0",
+  "main": "flickr.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "concurrently \"parcel index.html\" \"twitter-proxy twitter.json\"",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/momentum-cohort-2018-04/vanilla-javascript-capstone-danger-zone.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/momentum-cohort-2018-04/vanilla-javascript-capstone-danger-zone/issues"
+  },
+  "homepage": "https://github.com/momentum-cohort-2018-04/vanilla-javascript-capstone-danger-zone#readme"
+}
