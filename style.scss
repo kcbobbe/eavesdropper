@@ -2,9 +2,9 @@
   box-sizing: border-box;
 }
 
-.twitter-results{
-  display:flex;
-}
+// .twitter-results{
+//   display:flex;
+// }
 // .flickr-results{
 //   display:flex;
 // }
@@ -12,6 +12,45 @@
   display:flex;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+
+  &:hover {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.tweet {
+  margin-top: 10px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 25px;
+  background: #1E2835;
+  color: white;
+
+  &__img {
+    border-radius: 50%;
+  }
+
+  &__screen-name {
+    color: #8B99A5;
+  }
+
+  &__fav {
+    margin-left: 10px;
+  }
+
+  &__content {
+    margin: 10px 0;
+  }
+}
+
+.twitter-results {
+  // border: 1px solid black;
+  background: #161D25;
+  margin: 20px 0;
 
 // Flickr Slideshow
 
@@ -21,7 +60,7 @@
   margin: auto;
 }
 
-Hide the images by default
+// Hide the images by default
 .mySlides {
     display: none;
 }
