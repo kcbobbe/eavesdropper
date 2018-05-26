@@ -58,7 +58,7 @@ function plusSlides (n) {
 
 function showSlides (n) {
   var i
-  var slides = $('.mySlides')
+  var slides = document.getElementsByClassName('.mySlides')
   console.log(slides)
   if (n > slides.length) { slideIndex = 1 }
   if (n < 1) { slideIndex = slides.length }
