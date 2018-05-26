@@ -12,7 +12,7 @@
   display:flex;
 }
 
-a {
+.twitter-results a {
   text-decoration: none;
   color: black;
 
@@ -51,8 +51,9 @@ a {
   // border: 1px solid black;
   background: #161D25;
   margin: 20px 0;
+  height: 500px;
+  overflow: auto;
 }
-
 // Flickr Slideshow
 
 .slideshow-container {

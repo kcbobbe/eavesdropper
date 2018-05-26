@@ -14,7 +14,7 @@ $('#search').on('submit', (e) => {
       console.log(search)
       $('.content').html('')
       for (var i = 0; i < tweets.statuses.length; i++) {
-        $('.content').append(`
+        $('.twitter-results').append(`
         <a class="twitter-link" href="https://twitter.com/${tweets.statuses[i].user.screen_name}/status/${tweets.statuses[i].id_str}" target="_blank">
           <div class="tweet">
             <img class="tweet__img" src="${tweets.statuses[i].user.profile_image_url}">
