@@ -16,7 +16,7 @@ $('#search').on('submit', (e) => {
       $('#flickr-photo-display-area').html('')
       let searchResults = response.body.photos.photo
       getPhotoInfo(searchResults)
-      htmlToPage.push(`<a class="prev" onclick="plusSlides(-1)">&#10094;</a><a class="next" onclick="plusSlides(1)">&#10095;</a>`)
+      htmlToPage.push(`<a class="prev" onclick="${plusSlides(-1)}">&#10094;</a><a class="next" onclick="${plusSlides(1)}">&#10095;</a>`)
       console.log(htmlToPage)
       $('#flickr-photo-display-area').html(htmlToPage)
     })
@@ -41,4 +41,28 @@ function resultsToHTML (farm, server, id, secret) {
     <img class="flickrPhoto" style="width:100%" src="https://farm${farm}.staticflickr.com/${server}/${id}_${secret}_z.jpg">
   </div>
   `
+}
+
+var slideIndex = 1
+showSlides(slideIndex)
+
+// Next/previous controls
+function plusSlides (n) {
+  showSlides(slideIndex += n)
+}
+
+// // Thumbnail image controls
+// function currentSlide (n) {
+//   showSlides(slideIndex = n)
+// }
+
+function showSlides (n) {
+  var i
+  var slides = $('.mySlides')
+  console.log(slides)
+  if (n > slides.length) { slideIndex = 1 }
+  if (n < 1) { slideIndex = slides.length }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].display = 'none'
+  } slides[ slideIndex - 1 ].style.display = 'block'
 }
