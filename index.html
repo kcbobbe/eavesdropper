@@ -8,24 +8,39 @@
   <link rel="stylesheet" href="https://cdn.shoelace.style/1.0.0-beta24/shoelace.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <link rel="stylesheet" href="style.scss">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  <script src="https://apis.google.com/js/api.js"></script>
   <script src="twitter.js" defer></script>
   <script src="flickr.js" defer></script>
+  <script src ="youtube.js" defer></script>
 </head>
 <body>
   <div class="container">
     <h1>Twitter</h1>
     <form id="search">
       <input type="text" id="input">
-      <button type="submit">Search</button>
+      <button id = "search-button" type="submit">Search</button>
     </form>
 
-    <div class="content"></div>
+    <div class="content twitter-results"></div>
   </div>
   <!-- <script src="https://cdn.shoelace.style/1.0.0-beta24/shoelace.js"></script> -->
 
   <!-- FLICKR -->
-  <div id = "flickr-photo-display-area">
+  <div id = "flickr-photo-display-area" class = "flickr-results">
     
   </div>
+
+<!-- YouTube (wip) -->
+  <!-- <div id="buttons">
+    <label>
+     <input id="query" value='cats' type="text" />
+     <button id="search-button">Search</button>
+   </label>
+  </div> -->
+  <div id="video-box" class = "youtube-results">
+  </div>
+  
+
 </body>
 </html>
