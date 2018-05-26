@@ -23,13 +23,19 @@ function search() {
   });
 
   request.execute(function (response) {
-    console.log(response.result.items.id)
-    var str = JSON.stringify(response.result);
-    $('#search-container').html('<pre>' + str + '</pre>');
+    // console.log('wow')
+    // console.log(response.result.items[0].id.videoId)
+    let videoId = (response.result.items[0].id.videoId)
+    document.getElementById('video-box').innerHTML =
+    `<iframe width="420" height="315" 
+    src="https://www.youtube.com/embed/${videoId}">
+    </iframe>`
+    // var str = JSON.stringify(response.result)
+    // $('#search-container').html('<pre>' + str + '</pre>')
     // (console.log(str))
-  });
+  })
 }
 
 document.getElementById('search-button').addEventListener('click', function (e) { search() })
 
-gapi.load('client', start);
+gapi.load('client', start)
