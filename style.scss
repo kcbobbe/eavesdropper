@@ -8,8 +8,29 @@
 // .flickr-results{
 //   display:flex;
 // }
+
+body{
+  margin:auto;
+}
+
 .youtube{
-  display:flex;
+  grid-column: 2;
+  grid-row: 2;
+  height:250px;
+  background-color:green;
+}
+
+
+.search-box{
+
+}
+
+.container {
+  background-color:black;
+  display: grid;
+  grid-gap: 10px;
+    grid-template-columns:45% 45%;
+    grid-template-rows: 300px 600px;
 }
 
 .twitter-results a {
@@ -29,6 +50,7 @@
   padding: 25px;
   background: #1E2835;
   color: white;
+  
 
   &__img {
     border-radius: 50%;
@@ -50,17 +72,23 @@
 .twitter-results {
   // border: 1px solid black;
   background: #161D25;
-  margin: 20px 0;
-  height: 700px;
-  width:45%;
+  // margin: 20px 0;
+  height: 500px;
+  // width:50%;
   overflow: auto;
+  grid-column:1;
+  grid-row:1/2;
 }
 // Flickr Slideshow
 
 .slideshow-container {
-  max-width: 70%;
+  // max-width: 50%;
   position: relative;
+  height: 250px;
+  overflow:auto;
   margin: auto;
+  grid-column:2;
+  grid-row:1;
 }
 
 // Hide the images by default
