@@ -50,8 +50,7 @@ body{
   color: #EEE;
   position: fixed;
   font-size: 1.5rem;
-  // margin:.5rem 0 0 0;
-  text-align:center;
+  margin:.5rem 0 0 0;
 }
 
 .container {
@@ -117,7 +116,7 @@ body{
 
 .slideshow-container {
   // max-width: 50%;
-  position: relative;
+  // position: relative;
   height: 260px;
   width:100%;
   overflow:auto;
@@ -136,17 +135,17 @@ body{
   margin-top: 10px;
 }
 
-.footer__twitter{
-  color:white;
-  grid-column:1;
-  grid-row:3;
-}
+// .footer__twitter{
+//   color:white;
+//   grid-column:1;
+//   grid-row:3;
+// }
 
-.footer__flickr{
-  color:white;
-  grid-column:2;
-  grid-row:3;
-}
+// .footer__flickr{
+//   color:white;
+//   grid-column:2;
+//   grid-row:3;
+// }
 
 @media all and (max-width: 700px) {
   .container {
@@ -169,9 +168,6 @@ body{
   }
 
   .subtitle {
-    color: #EEE;
     position: absolute;
-    font-size: 1.5rem;
-    // margin:.5rem 0 0 0;
   }
 }
