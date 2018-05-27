@@ -9,19 +9,35 @@
 //   display:flex;
 // }
 
-h1{
+header{
+  color:grey;
   text-align:center;
+  margin:0 auto .25rem auto;
+  padding:0;
+  background-color:black;
+}
+
+h1{
+  margin:0;
+  padding:0;
+}
+
+.icons{
+  margin: 0;
+  padding: 0;
 }
 
 iframe {
-  height:200px;
-  margin:auto;
-  border-radius: 12px;
+  height:250px;
+  width:100%;
+  text-align:center;
+  margin:0 auto 0 auto;
+  // border-radius: 12px;
+  border:1px solid black;
   grid-column: 2;
   grid-row: 1;
   // position:relative;
 
-  background-color:green;
 }
 
 body{
@@ -37,7 +53,9 @@ body{
 
 .search-box{
   width:50%;
-  margin:1rem auto 1rem auto;
+  margin:0 auto 0 auto;
+  padding:0;
+  height:40px;
 
 }
 
@@ -46,8 +64,9 @@ body{
   display: grid;
   grid-gap: 10px;
     grid-template-columns:50% 50%;
-    grid-template-rows: 250px 250px;
+    grid-template-rows: 270px 270px;
 }
+
 
 .twitter-results a {
   text-decoration: none;
@@ -84,12 +103,15 @@ body{
     margin: 10px 0;
   }
 }
+.tweet:hover {
+  background-color:rgba(0,0,0,.4);
+}
 
 .twitter-results {
   // border: 1px solid black;
   background: #161D25;
   // margin: 20px 0;
-  height: 500px;
+  height: 540px;
   // width:50%;
   overflow: auto;
   grid-column:1;
@@ -100,7 +122,8 @@ body{
 .slideshow-container {
   // max-width: 50%;
   position: relative;
-  height: 250px;
+  height: 260px;
+  width:90%;
   overflow:auto;
   margin: 0 auto 0 auto;
   grid-column:2;
@@ -154,4 +177,16 @@ body{
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
+}
+
+.footer__twitter{
+  color:white;
+  grid-column:1;
+  grid-row:3;
+}
+
+.footer__flickr{
+  color:white;
+  grid-column:2;
+  grid-row:3;
 }
