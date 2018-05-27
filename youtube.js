@@ -1,20 +1,21 @@
 // import 'https://apis.google.com/js/api.js'
 // import 'https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js'
+import $ from 'jquery'
 const GOOGLE_API_KEY = 'AIzaSyCRvYV26aWufETmpUma7DIYxddjTz7g4O4'
 
-function start() {
+function start () {
   gapi.client.init({
     'apiKey': GOOGLE_API_KEY
   }).then(function () {
     gapi.client.load('youtube', 'v3', function () {
-      $('#search-button').attr('disabled', false);
+      $('#search-button').attr('disabled', false)
     })
   })
 }
 
 // Search for a specified string.
-function search() {
-  var q = $('#input').val();
+function search () {
+  var q = $('#input').val()
   var request = gapi.client.youtube.search.list({
     q: q,
     part: 'snippet',

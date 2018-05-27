@@ -3,6 +3,7 @@
     "babel-jest": "^23.0.0",
     "concurrently": "^3.5.1",
     "jest": "^23.0.0",
+    "jq": "^1.7.2",
     "jquery": "^3.3.1",
     "superagent": "^3.8.3",
     "surge": "^0.20.1",
