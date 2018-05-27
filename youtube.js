@@ -6,7 +6,6 @@ function start() {
   gapi.client.init({
     'apiKey': GOOGLE_API_KEY
   }).then(function () {
-    console.log('hi')
     gapi.client.load('youtube', 'v3', function () {
       $('#search-button').attr('disabled', false);
     })
@@ -24,12 +23,19 @@ function search() {
 
   request.execute(function (response) {
     // console.log('wow')
-    // console.log(response.result.items[0].id.videoId)
-    let videoId = (response.result.items[0].id.videoId)
+    console.log(response.result.items[0].snippet.channelTitle)
+    console.log(response.result.items[0].snippet.title)
+    let videoId = response.result.items[0].id.videoId
+    let videoTitle = response.result.items[0].snippet.title
+    let videoChannel = response.result.items[0].snippet.channelTitle
     document.getElementById('video-box').innerHTML =
-    `<iframe width="420" height="315" 
+    `<iframe
     src="https://www.youtube.com/embed/${videoId}">
     </iframe>`
+    // document.getElementById('youtube-title').innerHTML =
+    // `<strong>${videoTitle}</strong>`
+    // document.getElementById('youtube-channel').innerHTML =
+    // `${videoChannel}`
     // var str = JSON.stringify(response.result)
     // $('#search-container').html('<pre>' + str + '</pre>')
     // (console.log(str))
