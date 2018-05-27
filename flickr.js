@@ -14,7 +14,7 @@ $('#search').on('submit', (e) => {
       $('#flickr-photo-display-area').html('')
       let searchResults = response.body.photos.photo
       getPhotoInfo(searchResults)
-      $('#flickr-photo-display-area').html(`<i class="subtitle fab fa-flickr"></i><a href="https://www.flickr.com/search/?text=${search}">${htmlToPage}</a>`)
+      $('#flickr-photo-display-area').html(`<i class="subtitle fab fa-flickr"></i><a href="https://www.flickr.com/search/?text=${search}">${htmlToPage.join('')}</a>`)
     })
 }
 )
