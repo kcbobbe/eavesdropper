@@ -9,19 +9,35 @@
 //   display:flex;
 // }
 
-body{
-  margin:auto;
+h1{
+  text-align:center;
 }
 
-.youtube{
+iframe {
+  height:200px;
+  margin:auto;
+  border-radius: 12px;
   grid-column: 2;
-  grid-row: 2;
-  height:250px;
+  grid-row: 1;
+  // position:relative;
+
   background-color:green;
 }
 
+body{
+  margin:auto;
+  background-color:#555555;
+}
+
+// .youtube{
+// height:220px;
+//   background-color:green;
+// }
+
 
 .search-box{
+  width:50%;
+  margin:1rem auto 1rem auto;
 
 }
 
@@ -29,8 +45,8 @@ body{
   background-color:black;
   display: grid;
   grid-gap: 10px;
-    grid-template-columns:45% 45%;
-    grid-template-rows: 300px 600px;
+    grid-template-columns:50% 50%;
+    grid-template-rows: 250px 250px;
 }
 
 .twitter-results a {
@@ -86,9 +102,9 @@ body{
   position: relative;
   height: 250px;
   overflow:auto;
-  margin: auto;
+  margin: 0 auto 0 auto;
   grid-column:2;
-  grid-row:1;
+  grid-row:2;
 }
 
 // Hide the images by default
