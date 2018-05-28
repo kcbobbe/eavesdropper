@@ -8,6 +8,7 @@ $('#search').on('submit', (e) => {
   e.preventDefault()
   const search = $('#input').val().split(' ').join('+')
   $('div').removeClass('hidden')
+  $('#input').blur()
   request
     .get(`https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=16e988fdeac45c2f91be93eb25384173&text=${search}&per_page=6&page=1&format=json&nojsoncallback=1&media=photos`)
     .then(response => {
