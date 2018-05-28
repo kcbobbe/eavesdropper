@@ -16,6 +16,7 @@ $('#search').on('submit', (e) => {
       getPhotoInfo(searchResults)
       $('#flickr-photo-display-area').html(`<p class="iconline"><i class="subicon fab fa-flickr"></i></p><a href="https://www.flickr.com/search/?text=${search}">${htmlToPage.join('')}</a>`)
     })
+  document.getElementById('search').reset()
 }
 )
 

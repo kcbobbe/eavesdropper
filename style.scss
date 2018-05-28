@@ -28,19 +28,6 @@ h1{
   border: none;
 }
 
-iframe {
-  height:270px;
-  width:100%;
-  text-align:center;
-  margin:0 auto 0 auto;
-  // border-radius: 12px;
-  border:1px solid black;
-  grid-column: 2;
-  grid-row: 1;
-  // position:relative;
-
-}
-
 body{
   margin:auto;
   background-color:#E5E6E4;
@@ -53,6 +40,16 @@ body{
   height:40px;
 
 }
+
+.subheader {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  color: #1E2835;
+  padding: 50px 20px 10px 20px;
+  line-height: 30px;
+}
+
 
 .subicon {
   color: #161D25;
@@ -71,9 +68,22 @@ body{
   display: grid;
   grid-gap: 10px;
     grid-template-columns:50% 50%;
-    grid-template-rows: 270px 270px;
+    grid-template-rows: 310px 310px;
 }
 
+// You Tube
+
+iframe {
+  height:270px;
+  width:100%;
+  text-align:center;
+  margin:0 auto 0 auto;
+  // border-radius: 12px;
+  border:1px solid black;
+  grid-column: 2;
+  grid-row: 1;
+  // position:relative;
+}
 
 .twitter-results a {
   text-decoration: none;
@@ -118,7 +128,7 @@ body{
   // border: 1px solid black;
   background: #161D25;
   // margin: 20px 0;
-  height: 540px;
+  height: 580px;
   // width:50%;
   overflow: auto;
   grid-column:1;
@@ -160,6 +170,10 @@ body{
 //   grid-row:3;
 // }
 
+footer {
+  margin-top: 50px;
+}
+
 @media all and (max-width: 700px) {
   .container {
     display: flex;
@@ -172,7 +186,7 @@ body{
     height: 515px;
   }
   
-  .twitter-results {
+  .content {
     order: 2;
   }
   
@@ -183,4 +197,18 @@ body{
   .subtitle {
     position: absolute;
   }
+
+  .subheader {
+    font-size: 1.1rem;
+    padding-bottom: 0px;
+  }
+
+  .search-box {
+    width: 85%;
+  }
+
+  .search-box {
+    margin-bottom: 20px;
+  }
+
 }
