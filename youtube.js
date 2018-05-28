@@ -31,7 +31,11 @@ function search () {
     let videoChannel = response.result.items[0].snippet.channelTitle
     document.getElementById('video-box').innerHTML =
     `<p class="iconline" style = "background-color: #E5E6E4"><i class="subicon fab fa-youtube"></i></p><iframe
-    src="https://www.youtube.com/embed/${videoId}">
+    src="https://www.youtube.com/embed/${videoId}" allowfullscreen="allowfullscreen"
+    mozallowfullscreen="mozallowfullscreen" 
+    msallowfullscreen="msallowfullscreen" 
+    oallowfullscreen="oallowfullscreen" 
+    webkitallowfullscreen="webkitallowfullscreen">
     </iframe>`
     // document.getElementById('youtube-title').innerHTML =
     // `<strong>${videoTitle}</strong>`
