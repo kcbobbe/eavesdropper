@@ -13,7 +13,7 @@ $('#search').on('submit', (e) => {
       console.log(tweets.statuses)
       console.log(search)
       $('.content').html('')
-      $('.content').html(`<i class="subtitle fab fa-twitter"></i><div class="twitter-results"></div>`)
+      $('.content').html(`<div class="twitter-results"><p class="iconline" style = "background-color: #E5E6E4"><i class="subicon fab fa-twitter"></i></p></div>`)
       for (var i = 0; i < tweets.statuses.length; i++) {
         $('.twitter-results').append(`
           <a class="twitter-link" href="https://twitter.com/${tweets.statuses[i].user.screen_name}/status/${tweets.statuses[i].id_str}" target="_blank">
