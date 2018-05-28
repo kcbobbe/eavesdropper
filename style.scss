@@ -43,7 +43,7 @@ body{
 
 .subheader {
   font-family: 'Roboto', sans-serif;
-  font-weight: 600;
+  font-weight: 300;
   text-align: center;
   color: #1E2835;
   padding: 50px 20px 10px 20px;
@@ -55,13 +55,16 @@ body{
   color: #161D25;
   // position: fixed;
   font-size: 1.5rem;
+  margin:.5rem 0 0 0;
+  padding: 0;
 }
 
-// p .iconline {
-//   margin: 0;
-//   display: block;
-//   position: fixed;
-// }
+.iconline {
+  margin: 0;
+  font-family: 'Open-sans', sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
 
 .container {
   // background-color:black;
@@ -69,6 +72,12 @@ body{
   grid-gap: 10px;
     grid-template-columns:50% 50%;
     grid-template-rows: 310px 310px;
+  box-shadow: inset 0 0 10px #000000; 
+  padding-top: 10px;
+}
+
+.hidden {
+  display: none;
 }
 
 // You Tube

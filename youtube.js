@@ -30,7 +30,7 @@ function search () {
     let videoTitle = response.result.items[0].snippet.title
     let videoChannel = response.result.items[0].snippet.channelTitle
     document.getElementById('video-box').innerHTML =
-    `<p class="iconline" style = "background-color: #E5E6E4"><i class="subicon fab fa-youtube"></i></p><iframe
+    `<p class="iconline" style = "background-color: #E5E6E4"><i class="subicon fab fa-youtube"></i> on YouTube</p><iframe
     src="https://www.youtube.com/embed/${videoId}">
     </iframe>`
     // document.getElementById('youtube-title').innerHTML =

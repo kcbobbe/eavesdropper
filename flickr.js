@@ -8,13 +8,14 @@ let htmlToPage = []
 $('#search').on('submit', (e) => {
   e.preventDefault()
   const search = $('#input').val().split(' ').join('+')
+  $('div').removeClass('hidden')
   request
     .get(`https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=16e988fdeac45c2f91be93eb25384173&text=${search}&per_page=6&page=1&format=json&nojsoncallback=1&media=photos`)
     .then(response => {
       $('#flickr-photo-display-area').html('')
       let searchResults = response.body.photos.photo
       getPhotoInfo(searchResults)
-      $('#flickr-photo-display-area').html(`<p class="iconline"><i class="subicon fab fa-flickr"></i></p><a href="https://www.flickr.com/search/?text=${search}">${htmlToPage.join('')}</a>`)
+      $('#flickr-photo-display-area').html(`<p class="iconline"><i class="subicon fab fa-flickr"></i> on Flickr</p><a href="https://www.flickr.com/search/?tags=${search}">${htmlToPage.join('')}</a>`)
     })
   document.getElementById('search').reset()
 }
