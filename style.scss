@@ -54,11 +54,16 @@ body{
 
 }
 
-.subtitle {
-  color: #EEE;
-  position: fixed;
+.subicon {
+  color: #161D25;
+  // position: fixed;
   font-size: 1.5rem;
   margin:.5rem 0 0 0;
+  padding: 0;
+}
+
+.iconline {
+  margin: 0;
 }
 
 .container {
