@@ -94,6 +94,8 @@ iframe {
   // position:relative;
 }
 
+// Twitter
+
 .twitter-results a {
   text-decoration: none;
   color: black;
@@ -134,11 +136,8 @@ iframe {
 }
 
 .twitter-results {
-  // border: 1px solid black;
   background: #161D25;
-  // margin: 20px 0;
   height: 580px;
-  // width:50%;
   overflow: auto;
   grid-column:1;
   grid-row:1/2;
@@ -183,7 +182,7 @@ footer {
   margin-top: 50px;
 }
 
-@media all and (max-width: 700px) {
+@media all and (max-width: 768px) {
   .container {
     display: flex;
     flex-wrap: nowrap;
