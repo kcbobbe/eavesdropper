@@ -3,21 +3,29 @@
 }
 
 header{
-  color:grey;
+  color: #E5E6E4;
   text-align:center;
   margin:0 auto .25rem auto;
   padding:0;
-  background-color:black;
+  background: linear-gradient(#161D25, 95%, rgb(129, 152, 160));
 }
 
 h1{
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 20px 0 20px 0;
+  font-weight: 800;
+  font-family: 'Open-sans', sans-serif;
 }
 
 .icons{
   margin: 0;
-  padding: 0;
+  padding-bottom: 20px;
+  font-size: 1.3rem;
+}
+
+#search-button {
+  background: linear-gradient(rgb(129, 152, 160), 10%, #1E2835, 95%, rgb(129, 152, 160));
+  border: none;
 }
 
 iframe {
@@ -35,12 +43,12 @@ iframe {
 
 body{
   margin:auto;
-  background-color:#555555;
+  background-color:#E5E6E4;
 }
 
 .search-box{
   width:50%;
-  margin:0 auto 0 auto;
+  margin:50px auto 50px auto;
   padding:0;
   height:40px;
 
