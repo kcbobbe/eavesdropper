@@ -20,34 +20,26 @@ function search () {
     q: q,
     part: 'snippet',
     maxResults: 1
-  });
+  })
 
   request.execute(function (response) {
-    // console.log('wow')
     console.log(response.result.items[0].snippet.channelTitle)
     console.log(response.result.items[0].snippet.title)
     let videoId = response.result.items[0].id.videoId
-    let videoTitle = response.result.items[0].snippet.title
-    let videoChannel = response.result.items[0].snippet.channelTitle
     document.getElementById('video-box').innerHTML =
-    document.getElementById('video-box').innerHTML =
-    `<p class="iconline" style = "background-color: #E5E6E4"><i class="subicon fab fa-youtube"></i> on YouTube</p><iframe
+      document.getElementById('video-box').innerHTML =
+      `<p class="iconline" style = "background-color: #E5E6E4"><i class="subicon fab fa-youtube"></i> on YouTube</p><iframe
     src="https://www.youtube.com/embed/${videoId}" allowfullscreen="allowfullscreen"
     mozallowfullscreen="mozallowfullscreen" 
     msallowfullscreen="msallowfullscreen" 
     oallowfullscreen="oallowfullscreen" 
     webkitallowfullscreen="webkitallowfullscreen">
     </iframe>`
-    // document.getElementById('youtube-title').innerHTML =
-    // `<strong>${videoTitle}</strong>`
-    // document.getElementById('youtube-channel').innerHTML =
-    // `${videoChannel}`
-    // var str = JSON.stringify(response.result)
-    // $('#search-container').html('<pre>' + str + '</pre>')
-    // (console.log(str))
   })
 }
 
-document.getElementById('search-button').addEventListener('click', function (e) { search() })
+document.getElementById('search-button').addEventListener('click', function (e) {
+  search()
+})
 
 gapi.load('client', start)
